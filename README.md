@@ -32,7 +32,7 @@ The TEMCS is a metric to measure the level of knowledge transferability between 
 1. Calculating the TEMCS score from the source behavior to the target behavior characteristics in each dataset
 
 ```sh
->>> python TEMCS_computer.py
+>>> python TSCS_computer.py
 ```
 
 2. Calculating the distribution of  the TEMCS score of a data set
