@@ -10,7 +10,7 @@ Python 3.6.3
 ## Table of Contents
 
 - [Background](#background)
-- [Introduction of each file] (#Introduction files)
+- [Introduction files](#Introduction files)
 - [Usage](#usage)
 
 
