@@ -10,13 +10,13 @@ import random
 3、计算不同样本的可迁移性大小；不同行为的可迁移性大小
 """
 
-with open('train_test_set_10.pkl', 'rb') as f2:
+with open('train_test_set_5.pkl', 'rb') as f2:
     train_set = pickle.load(f2)
     test_set = pickle.load(f2)
     user_count, item_count = pickle.load(f2)
 # print("user_count, item_count", user_count, item_count)
 
-concept_data_20 = pd.read_csv("centers_20.csv")
+concept_data_20 = pd.read_csv("centers_30.csv")
 concept_matrix_20 = concept_data_20.as_matrix()
 concept_matrix_20 = concept_matrix_20.astype(np.float32)
 concept_matrix_20 = concept_matrix_20[:,:100]
@@ -276,6 +276,6 @@ for line in train_set:
 
 # 保存为csv文件 #user_ID, trans_fo, trans_vo, trans_fo_cos, trans_vo_cos
 data1 = pd.DataFrame(hang)
-data1.to_csv("train_test_set_10_weight_20c_update.csv", index=0, encoding="UTF-8")
+data1.to_csv("train_test_set_5_weight_30c_update.csv", index=0, encoding="UTF-8")
 
 
